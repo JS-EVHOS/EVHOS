@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="de">
+<head>
+<style>
+body {
+	background-color:  lightblue;
+}
+h2 {
+	color: yellow;
+	text-decoration: underline;
+	font-family: Helvetica;
+}
+h1 {
+	color: darkblue;
+	text-decoration: underline;
+	font-family: Georgia;
+}
+#eingabe {
+	border-radius: 10px;
+	heigth: 10px;
+	color: darkblue;
+}
+#ISS {
+	border-radius: 10px;
+	heigth: 10px;
+	color: yellow;
+	box-shadow: 5px 5px 5px balck;
+}
+#Suchen {
+	background-color: darkblue;
+	color: white;
+	border-radius: 10px;
+}
+#Chatgpt {
+	color: white;
+	background-color: red;
+	heigth: 50px;
+}
+#SucheS {
+	color: white;
+	background-color: yellow;
+	border-radius: 10px;
+}
+#ENT {
+	background-color: orange;
+	color: white;
+}
+#MeineS {
+	background-color: orange;
+	color: white;
+}
+#PapierKOR {
+	color: white;
+	background-color: orange;
+	border-radius: 10px;
+}
+</style>
+<body>
+<h1>Suchmaschine</h1>
+</body>
+<input type="text" id="eingabe" size="30">
+<button id="Suchen" onclick="Suche()">Suchen</button>
+<p></p>
+<button id="Chatgpt"onclick="ChatGPT()">Chat GPT</button>
+<h2>In Scratch Suchen</h2>
+<input type="text" id="ISS" size="30">
+<button id="SucheS" onclick="Scratch()">Suchen</button>
+<p></p>
+<button id="ENT" onclick="ENT()">Entwickeln</button>
+<button id="MeineS" onclick="MYSACH()">Meine Sachen</button>
+<button id="PapierKOR" onclick="PAP()">Papierkorb</button>
+<script>
+let eingabe = document.getElementById("eingabe");
+function Suche() {
+	let Suchen = eingabe.value;
+	document.getElementById("eingabe").value = "";
+	window.open("https://www.google.com/search?q=" + Suchen);
+}
+function ChatGPT() {
+window.open("https://chat.openai.com/chat/815f47ec-ac7a-41da-8420-4f0cac1d422d")	
+}
+function Scratch() {
+	let Suchen = ISS.value;
+	ISS.value ='';
+	window.open("https://scratch.mit.edu/search/projects?q=" + Suchen)
+}
+function ENT() {
+	window.open("https://scratch.mit.edu/projects/editor/")
+}
+function MYSACH() {
+	window.open("https://scratch.mit.edu/mystuff/")
+}
+function PAP() {
+	window.open("https://scratch.mit.edu/mystuff/#trash")
+}
+</script>
+</html>
